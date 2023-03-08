@@ -128,7 +128,9 @@ img {
 
 /*Hero  */
 .hero {
-
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
@@ -382,7 +384,7 @@ img {
 
 
 .customers-item:is(:hover, :focus) .customers-icon {
-    fill: currentColor;
+    fill: var(--background-btn);
 }
 
 /* footer */
@@ -491,6 +493,8 @@ img {
 .portfolio-btn:focus {
     background: var(--background-btn);
     color: var(--hero-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
 
 /* gallery */
@@ -520,6 +524,10 @@ img {
 
 .gallery-item {
     width: calc((100% - 48px) / 3);
+}
+
+.gallery-item:is(:hover, :focus) {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .gallery-subtitle {
